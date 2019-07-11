@@ -1,0 +1,111 @@
+/*
+
+Railscasts-like style (c) Visoft, Inc. (Damien White)
+
+注意：本檔案有自訂過！
+
+原因：debug baru 也有指定.hljs，與原本檔案class名稱一樣，造成權重不足
+更改：.hljs 改為 pre .hljs （利用.hljs前面都指定tag name 增加權重）
+
+*/
+
+pre .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #232323;
+  color: #e6e1dc;
+}
+
+pre .hljs-comment,
+pre .hljs-quote {
+  color: #bc9458;
+  font-style: italic;
+}
+
+pre .hljs-keyword,
+pre .hljs-selector-tag {
+  color: #c26230;
+}
+
+pre .hljs-string,
+pre .hljs-number,
+pre .hljs-regexp,
+pre .hljs-variable,
+pre .hljs-template-variable {
+  color: #a5c261;
+}
+
+pre .hljs-subst {
+  color: #519f50;
+}
+
+pre .hljs-tag,
+pre .hljs-name {
+  color: #e8bf6a;
+}
+
+pre .hljs-type {
+  color: #da4939;
+}
+
+
+pre .hljs-symbol,
+pre .hljs-bullet,
+pre .hljs-built_in,
+pre .hljs-builtin-name,
+pre .hljs-attr,
+pre .hljs-link {
+  color: #6d9cbe;
+}
+
+pre .hljs-params {
+  color: #d0d0ff;
+}
+
+pre .hljs-attribute {
+  color: #cda869;
+}
+
+pre .hljs-meta {
+  color: #9b859d;
+}
+
+pre .hljs-title,
+pre .hljs-section {
+  color: #ffc66d;
+}
+
+pre .hljs-addition {
+  background-color: #144212;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+pre .hljs-deletion {
+  background-color: #600;
+  color: #e6e1dc;
+  display: inline-block;
+  width: 100%;
+}
+
+pre .hljs-selector-class {
+  color: #9b703f;
+}
+
+pre .hljs-selector-id {
+  color: #8b98ab;
+}
+
+pre .hljs-emphasis {
+  font-style: italic;
+}
+
+pre .hljs-strong {
+  font-weight: bold;
+}
+
+pre .hljs-link {
+  text-decoration: underline;
+}

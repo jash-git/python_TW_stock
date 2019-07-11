@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://ithelp.ithome.com.tw/articles/10201985 -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;-webkit-transition:border-color .2s;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);-webkit-transition:background .2s;transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;-webkit-transition:opacity .2s,-webkit-transform .3s;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>[Day30]心得分享 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</title>
+
+<meta name="description" content="心得 一開始想要學習Python是因為想要學習金融方面的數據分析，先從udemy上面學習Python課程名稱 Machine Learning A-Z™: Hands-On Python &amp;...">
+<meta name="keywords" content="iT邦幫忙,iThome">
+<meta name="author" content="iThome">
+<meta property="og:site_name" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:url" content="https://ithelp.ithome.com.tw/articles/10201985">
+<meta property="og:type" content="website">
+<meta property="og:title" content="[Day30]心得分享 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:image" content="https://ithelp.ithome.com.tw/upload/images/20181105/20111390K5Fi8wMwAX.png">
+<meta property="og:description" content="心得 一開始想要學習Python是因為想要學習金融方面的數據分析，先從udemy上面學習Python課程名稱 Machine Learning A-Z™: Hands-On Python &amp;...">
+<meta property="fb:app_id" content="137875859607921">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://ithelp.ithome.com.tw/storage/favicons/manifest.json">
+<link rel="mask-icon" href="https://ithelp.ithome.com.tw/storage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://ithelp.ithome.com.tw/storage/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/font-awesome.min.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/simplemde.min.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.min.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/google.css">
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/style.css">
+<!-- highlight -->
+<link rel="stylesheet" href="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/railscasts.css">
+<!-- end -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--messenger css-->
+    <script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/util.js"></script><script src="chrome-extension://jhffgcfmcckgmioipfnmbannkpncfipo/pagejs.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:15px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:19px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:13px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:13px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:17px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+
+<body>
+    <div class="header">
+    <div class="header__inner clearfix">
+        <h1 class="header__logo pull-left"><a href="https://ithelp.ithome.com.tw/"><img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/logo.svg" alt="iT邦幫忙" class="img-responsive"></a></h1>
+        <div class="header__promote">
+            <div class="a12word pull-right">
+                <div class="a12word__box">
+                    <script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js.下載" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ga.js.下載"></script><script id="facebook-jssdk" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js(1).下載"></script><script type="text/javascript" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS.html"> </script><!-- 0_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=0~ithome_forum~1269139" target="_blank">HITCON攻防招生啟動</a><!-- 0_ithome_forum end -->
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(1).html"> </script><!-- 23_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=23~ithome_forum~1271774" target="_blank">35 萬公務同仁培養數位化能力</a><!-- 23_ithome_forum end -->
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(2).html"> </script><!-- 1_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=1~ithome_forum~1275084" target="_blank">什麼是  Intel Core vPro 處理器</a><!-- 1_ithome_forum end -->
+                </div>
+            </div>
+
+            <div class="a970 pull-right">
+                <script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(3).html"></script><!-- 3_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=3~ithome_forum~1274668" target="_blank"><img border="0" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/pic_1274668_726274.gif"></a><!-- 3_ithome_forum end -->
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu menu--fixed affix">
+        <div class="menu__bg">
+            <div class="menu__container clearfix">
+                
+                <h1 class="menu__logo">
+                    <a href="https://ithelp.ithome.com.tw/" class="menu__logo-link"><img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/nav_logo.svg" alt="iT邦幫忙"></a>
+                </h1>
+
+                                                                                                                
+                
+                <ul class="list-unstyled menu__left">
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/questions" class="menu__item-link  menu__item-link--pl">技術問答</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="menu__item-link  menu__item-link--active ">技術文章</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=job" class="menu__item-link  hidden-xs">iT 徵才</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/tags" class="menu__item-link  hidden-xs">Tag</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/talks" class="menu__item-link  hidden-xs">聊天室</a>
+                    </li>
+                    <li class="menu__item menu__item--ironman">
+                        <a href="https://ithelp.ithome.com.tw/ironman?sc=nav" target="_blank" class="menu__item-link hidden-xs">鐵人賽</a>
+                    </li>
+                </ul>
+                
+
+                                    
+                    <ul class="list-unstyled menu__right">
+                        <li class="menu__item">
+                            <div id="searchDropdown" class="menu__search-btn">
+                                <span class="menu__search-toggle"></span>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://ithelp.ithome.com.tw/users/login" class="menu__item-link">登入/註冊</a>
+                        </li>
+                    </ul>
+                            </div>
+        </div>
+
+        
+        <div class="menu__dropform">
+            <div class="menu__container">
+                <form method="GET" action="https://ithelp.ithome.com.tw/search" accept-charset="UTF-8" role="search" class="clearfix">
+                    <div class="pull-left">
+                        <input name="search" type="text" class="menu__search-input" placeholder="搜尋主題、問題或人">
+
+                        <input type="radio" class="radio-input" name="tab" value="question" id="searchQA" checked="">
+                        <label for="searchQA" class="radio-label">問答</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="article" id="searchArticle">
+                        <label for="searchArticle" class="radio-label">文章</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="tag" id="searchTag">
+                        <label for="searchTag" class="radio-label">Tag</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="user" id="searchID">
+                        <label for="searchID" class="radio-label">邦友</label>
+                    </div>
+                    <button type="submit" class="btn menu__dropform-btn">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="menu__mask"></div>
+</div>
+
+    
+            
+        <div class="container index-top">
+        <div class="row">
+            <div class="col-md-12 clearfix">
+                    <div class="leftside">
+        
+                
+                    <div class="ir-article-icon-10th clearfix">
+                 <a href="https://ithelp.ithome.com.tw/ironman" target="_blank" class="ir-article-icon-10th__frame">
+                <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ir-article-10th.png" alt="" class="ir-article-icon-10th__img-bear">
+                    <p class="ir-article-icon-10th__text">2019 iT 邦幫忙鐵人賽</p>
+                    
+                </a>
+                    <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ir-article-10th-2.png" alt="" class="ir-article-icon-10th__img-right">
+            </div>
+        
+        <div class="qa-panel clearfix">
+            
+            
+                            <div class="ir-article__days ir-article__days--ai-and-data ">
+                  <div class="ir-article__days-word">DAY <span class="ir-article__days-num">
+                                                        30
+                                                </span></div>
+              </div>
+              
+            <div class="qa-panel__side">
+                
+                <div class="qa-side">
+                    <div class="likeGroup">
+        <div class="likeGroup__arrow like_btn" data-type="article" data-id="10201985">
+                <i class="fa fa-caret-up"></i>
+        </div>
+        <div class="likeGroup__num">3</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="collection qa-collection" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="加入收藏清單">
+        <a href="https://ithelp.ithome.com.tw/users/login" class="btn collection__btn collection_btn">
+            <i class="fa fa-star-o"></i>
+        </a>
+    </div>
+                </div>
+                
+            </div>
+            <div class="qa-panel__content">
+                <div class="qa-header">
+                    
+                                            <a href="https://ithelp.ithome.com.tw/ironman/ai-and-data" class="group__badge group__badge--ai-and-data">
+                            AI &amp; Data
+                        </a>
+                                        <h3 class="ir-article__topic"><a href="https://ithelp.ithome.com.tw/users/20111390/ironman/1791">python 入門到分析股市</a>系列 第
+                    <span class="ir-article__topic-count">30</span> 篇
+                    </h3>
+
+                    
+
+
+                    <h2 class="qa-header__title ir-article__title">
+                                                [Day30]心得分享
+                    </h2>
+
+                    <div class="qa-header__tagGroup">
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/2019%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag qa-header__tagList">2019鐵人賽</a>
+                                            </div>
+
+
+                    <div class="ir-article-info">
+                        
+                                                    <a href="https://ithelp.ithome.com.tw/users/20111390/ironman" class="ir-article-info__avatar">
+                                <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/131380" class="img-circle">
+
+                            </a>
+                                                
+                        <div class="ir-article-info__content">
+                                                            <div><a href="https://ithelp.ithome.com.tw/users/20111390/ironman" class="ir-article-info__name">
+                                    Summer
+                                </a></div>
+                            
+                            <div class="ir-article-info__view">2651 瀏覽</div>
+
+                                                            <div><a href="https://ithelp.ithome.com.tw/ironman/signup/team/41" class="ir-article-info__team"><span class="team-badge">團隊</span>浪流連九程式匠自然產生的佛系碼農專區</a></div>
+                            
+                            <div><a title="2018-11-14 00:00:25" class="qa-header__info-time ir-article-info__time">2018-11-14 00:00:25</a></div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                
+                <div class="qa-markdown">
+                    <div class="markdown">
+                        <div class="markdown__style">
+                                                            <h3>心得</h3>
+<p>一開始想要學習Python是因為想要學習金融方面的數據分析，先從udemy上面學習Python課程名稱<br>
+<a href="https://www.udemy.com/machinelearning/" target="_blank">Machine Learning A-Z™: Hands-On Python &amp; R In Data Science</a>後來要寫大綱的時候才發現，這個主題好像不是我想要的....，應該是要找數據分析的課程。</p>
+<p>後來才發現到這個課程<a href="https://www.udemy.com/learning-python-for-data-analysis-and-visualization/" target="_blank">Learning Python for Data Analysis and Visualization</a>，才已這個為我的主題大綱，本來是想說一邊看影片學習一邊寫文章，後來發現這樣我只會看程式碼，可是不知道如何講理論，才又開始買書，從書中學理論、實作，如果有時間的話再看影片來補充資料。</p>
+<p>後來發現資料科學比我想像中的精深，在找資料的同時發現到很多key word-&gt; Machine Learning、Deep Learning、Artificial Intelligence、Scikit-Learn....在不斷看新課程的同時，也發現自己時間不夠學習這麼多知識，所以只能挑幾個比較符合主題的來論述。</p>
+<p>在網路上找了一張學習地圖<br>
+<img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20111390K5Fi8wMwAX.png" alt="https://ithelp.ithome.com.tw/upload/images/20181105/20111390K5Fi8wMwAX.png"></p>
+<p><a href="http://foundation.datasci.tw/learning-map/" target="_blank">http://foundation.datasci.tw/learning-map/</a></p>
+<p>光是機率和統計那關我就卡了蠻久的，太久沒有碰統計，真的都忘光了，花了好多時間，卻也只是學到統計基本而已，所以又跑去買書，想說等寫完鐵人30天再來惡補。</p>
+<p>真的覺得寫30天是一個非常快速學習的過程，可以逼自己學習新的技術。經過這次的30天，讓我多了好多計畫，希望自己之後可以認真的執行。應該會將練習的程式碼放在git上面。</p>
+<p>筆者還會繼續研究股市，只是文章會放到<a href="https://medium.com/summers-life" target="_blank">部落格</a>，希望到時候有毅力可以繼續寫下去。</p>
+<h3>2018年Python最好的20個數據分析庫</h3>
+<p><a href="https://hk.saowen.com/a/dde61e13e6691ce42826b74684cc45318a6fe07b791ff003547e9fc083906fb9" target="_blank">網站</a>列出了2018年Python最好的數據分析庫，這30天介紹了</p>
+<ul>
+<li>統計數據</li>
+</ul>
+<ol>
+<li>NumPy</li>
+<li>Pandas</li>
+</ol>
+<ul>
+<li>視覺化</li>
+</ul>
+<ol start="3">
+<li>Matplotlib</li>
+<li>Seaborn</li>
+</ol>
+<p>之後有興趣的人可以進一部了解機器學習、深度學習、自然語言處理、數據採集的部分。</p>
+<h3>之前的章節</h3>
+<ul>
+<li>安裝環境
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10199666" target="_blank">安裝Anaconda</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200046" target="_blank">安裝Jupyter notebook</a>
+</li>
+</ul>
+</li>
+<li>基礎語法
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200049" target="_blank">變數、資料型態、運算子</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200547" target="_blank">list、tuple、dict、for、while</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10201851" target="_blank">function、import</a>
+</li>
+</ul>
+</li>
+<li>File
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10202695" target="_blank">檔案類型(csv、xml、json、yaml)</a>
+</li>
+</ul>
+</li>
+<li>Numpy
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10203624" target="_blank">create Numpy</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10204089/" target="_blank">min、max、broadcasting、運算子</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10204336" target="_blank">Fancy、sort、structured array</a>
+</li>
+</ul>
+</li>
+<li>Pandas
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10204656/" target="_blank">Series、DataFrame、Index</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200052" target="_blank">Null、MultiIndex</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200433" target="_blank">資料合併</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200565" target="_blank">處理資料分組</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10200929" target="_blank">Time、eval</a>
+</li>
+</ul>
+</li>
+<li>Matplotlib
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10201004" target="_blank">圖表、座標、直方圖、圓餅圖</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10201670" target="_blank">legend、subplot、GridSpec、annotate</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10202385" target="_blank">加上中文字、柱狀圖、boxplot</a>
+</li>
+</ul>
+</li>
+<li>Seaborn
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10206304/" target="_blank">distplot、heatmap()</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10206417/" target="_blank">樣式設定</a>
+</li>
+</ul>
+</li>
+<li>統計
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10204118" target="_blank">統計基礎</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10202496" target="_blank">隨機變數(Random Variable)</a>
+</li>
+</ul>
+</li>
+<li>股票
+<ul>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10207014" target="_blank">介紹股票</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10205113" target="_blank">抓取股票</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10205068" target="_blank">基本分析</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10206894" target="_blank">繪製K線圖</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10204773" target="_blank">財報爬蟲和分析</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10207232" target="_blank">投資組合的風險評估 - 算術平均數</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10207621" target="_blank">投資組合的風險評估 - 對數收益率</a>
+</li>
+<li>
+<a href="https://ithelp.ithome.com.tw/articles/10208534" target="_blank">使用Prophet預測股票</a>
+</li>
+</ul>
+</li>
+<li>程式碼位置
+<ul>
+<li>
+<a href="https://github.com/lastsummer/learn_python_data_analysis/" target="_blank">github</a>
+</li>
+</ul>
+</li>
+</ul>
+ <br>
+                                                    </div>
+                    </div>
+                </div>
+
+                
+                <div class="qa-action">
+    <ul class="list-inline qa-action__list">
+        <li>
+            <a href="https://ithelp.ithome.com.tw/articles/10201985#reply" class="qa-action__link qa-action__link--reply">
+                <i class="fa fa-comment fa-fw qa-action__icon"></i>留言<span class="qa-action__link-num">2</span>            </a>
+        </li>
+        <li>
+            <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__trace">
+		<i class="fa fa-heart-o fa-fw qa-action__icon"></i>追蹤
+	</a>
+        </li>
+        <li class="pull-right">
+            <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__link qa-action__link-report report_btn">
+				<i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+		</a>
+        </li>
+            </ul>
+</div>
+
+            </div>
+
+
+            
+            <div class="social-share clearfix">
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/xd_arbiter.html" style="border: none;"></iframe></div><div></div></div></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like fb_iframe_widget" data-href="https://ithelp.ithome.com.tw/articles/10201985" data-width="36px" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=40&amp;href=https%3A%2F%2Fithelp.ithome.com.tw%2Farticles%2F10201985&amp;layout=box_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=36px"><span style="vertical-align: bottom; width: 41px; height: 40px;"><iframe name="f19d5bee0011594" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/like.html" style="border: none; visibility: visible; width: 41px; height: 40px;" class=""></iframe></span></div>
+    <ul class="soc">
+	    <li><a class="soc-twitter" href="https://twitter.com/intent/tweet?text=https://ithelp.ithome.com.tw/articles/10201985" target="_blank"></a></li>
+	    <li><a class="soc-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ithelp.ithome.com.tw/articles/10201985" target="_blank"></a></li>
+	    <li><a class="soc-google" href="https://plus.google.com/share?url=https://ithelp.ithome.com.tw/articles/10201985" target="_blank"></a></li>
+	    
+	</ul>
+</div>        </div>
+
+        
+        <div class="article-series">
+
+            
+                        <div class="clearfix article-series-page">
+                <div class="article-series-page__line"></div>
+                <div class="article-series-page__wrapper">
+                                                                <a href="https://ithelp.ithome.com.tw/articles/10208534" class="article-series-page__link">
+                            <div class="article-series-page__arrow article-series-page__arrow--left"><i class="fa fa-fw fa-angle-left" aria-hidden="true"></i></div>
+                            <div class="article-series-page__content">
+                                <div class="article-series-page__text">上一篇</div>
+                                <div class="article-series-page__title">[Day29] 使用Prophet預測股票</div>
+                            </div>
+                        </a>
+                                    </div>
+                <div class="article-series-page__wrapper text-right">
+                                                        </div>
+            </div>
+                        <div class="article-series-catalog">
+                <div class="article-series-catalog__badge">
+                    系列文
+                </div>
+                <div class="article-series-catalog__topic">
+                    <a href="https://ithelp.ithome.com.tw/users/20111390/ironman/1791" class="article-series-catalog__topic-link">python 入門到分析股市</a>
+                     共 <span class="article-series-catalog__num">30</span> 篇
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <div class="article-series-catalog__title">目錄</div>
+                        <div class="pull-right subscription-group">
+
+                                                            <a href="https://ithelp.ithome.com.tw/users/login" class="article-series-catalog__subscription subscription-btn">
+                                    <i class="fa fa-bookmark-o fa-fw" aria-hidden="true"></i>訂閱系列文
+                                </a>
+                            
+                            <div class="article-series-catalog__subscription-num">
+                                <span class="subscription-amount">152</span> 人訂閱
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="article-series-catalog__lists">
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">26</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10204773" class="article-series-catalog__link">[Day26] 財報爬蟲和分析</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">27</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10207232" class="article-series-catalog__link">[Day27]投資組合的風險評估 - 算術平均數</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">28</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10207621" class="article-series-catalog__link">[Day28]投資組合的風險評估 - 對數收益率</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">29</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10208534" class="article-series-catalog__link">[Day29] 使用Prophet預測股票</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">30</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10201985" class="article-series-catalog__link">[Day30]心得分享</a>
+                        </li>
+                                            </ol>
+                   
+
+                    <a href="https://ithelp.ithome.com.tw/users/20111390/ironman/1791"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>完整目錄</a>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        
+
+        
+                    <div class="qa-status">
+                <h3 class="qa-status__title">2 則留言</h3>
+                            </div>
+            
+            
+                            <div class="qa-panel response clearfix">
+    <a name="response-309380"></a>
+    <div class="qa-panel__side">
+                <div class="likeGroup">
+        <div class="likeGroup__arrow like_btn" data-type="response" data-id="309380">
+                <i class="fa fa-caret-up"></i>
+        </div>
+        <div class="likeGroup__num">0</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+    <div class="qa-panel__content">
+        <div class="ans-header">
+                        <a href="https://ithelp.ithome.com.tw/users/20107572/profile" class="ans-header__avatar response__avatar-size">
+                <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/126809" class="img-circle ans-header__avatar-img">
+
+            </a>
+            <div class="response-header__info">
+                <a href="https://ithelp.ithome.com.tw/users/20107572/profile" class="response-header__person">Dez</a>
+                <div class="ans-header__leveltime">
+                    iT邦新手 5 級 ‧ <a title="2018-11-14 00:03:50" class="ans-header__time">2018-11-14 00:03:50</a>
+                </div>
+            </div>
+                    </div>
+        
+                <div class="response-markdown">
+            <div class="markdown">
+                <div class="markdown__style">
+                                            <p>太準時了吧！就猜妳是第一個完賽的 XD</p>
+
+                                    </div>
+            </div>
+        </div>
+        <div class="qa-action response-action">
+            <ul class="list-inline qa-action__list">
+                                    <li class="qa-action__item">
+                        <div class="qa-action__comment">
+                            <i class="fa fa-comment fa-fw qa-action__icon"></i>回應
+                                                                    <span class="qa-action__link-num">
+                                        1
+                                    </span>
+                                                        </div>
+                    </li>
+                    <li class="qa-action__item pull-right">
+                        <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__link qa-action__link-report report_btn">
+				<i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+		</a>
+                    </li>
+                            </ul>
+        </div>
+        
+        <div class="comment">
+                                                        <div class="comment__group">
+                    
+                    <div class="comment__previous">
+                                            </div>
+                    
+                    <div>
+                                                                                <div class="comment__list">
+    <div class="comment__head">
+                    <a href="https://ithelp.ithome.com.tw/users/20111390/profile" class="comment__avatar">
+                <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/131380" class="img-circle comment__avatar-img">
+
+            </a>
+        
+    </div>
+    <div class="comment__body">
+        <div class="comment__info clearfix">
+                            <a href="https://ithelp.ithome.com.tw/users/20111390/profile" class="comment__person">Summer</a>
+            
+            <span class="comment__leveltime">
+                                    iT邦新手 5 級‧
+                                <a title="2018-11-14 00:05:16" class="comment__time">2018-11-14 00:05:16</a>
+            </span>
+            <a href="https://ithelp.ithome.com.tw/users/login" class="comment__report pull-right report_btn">
+		檢舉
+	</a>
+        </div>
+        <div class="markdown__style comment__content">
+                            <p>沒錯，剛剛開著電腦，就是等著發文，哈哈，終於結束了</p>
+
+                    </div>
+        
+        <div class="comment__form" style="position: relative; display: none;">
+            <div class="comment__textarea--rightmargin">
+                    <textarea class="SimpleMDE form-control comment__textarea" rows="3" name="description" cols="50">沒錯，剛剛開著電腦，就是等著發文，哈哈，終於結束了</textarea>
+            </div>
+            <button class="btn btn-main comment__submit" data-ajax="/api/comments/375457">修改</button>
+        </div>
+    </div>
+</div>
+                                            </div>
+                </div>
+                                        <div class="comment__supplement"><a href="https://ithelp.ithome.com.tw/users/login">登入發表回應</a></div>
+            
+                                        
+        </div>
+        
+    </div>
+</div>
+                            <div class="qa-panel response clearfix">
+    <a name="response-310262"></a>
+    <div class="qa-panel__side">
+                <div class="likeGroup">
+        <div class="likeGroup__arrow like_btn" data-type="response" data-id="310262">
+                <i class="fa fa-caret-up"></i>
+        </div>
+        <div class="likeGroup__num">0</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+    <div class="qa-panel__content">
+        <div class="ans-header">
+                        <a href="https://ithelp.ithome.com.tw/users/20117553/profile" class="ans-header__avatar response__avatar-size">
+                <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/138170" class="img-circle ans-header__avatar-img">
+
+            </a>
+            <div class="response-header__info">
+                <a href="https://ithelp.ithome.com.tw/users/20117553/profile" class="response-header__person">hubert11</a>
+                <div class="ans-header__leveltime">
+                    iT邦新手 5 級 ‧ <a title="2019-05-12 03:11:03" class="ans-header__time">2019-05-12 03:11:03</a>
+                </div>
+            </div>
+                    </div>
+        
+                <div class="response-markdown">
+            <div class="markdown">
+                <div class="markdown__style">
+                                            <p><img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/emoticon12.gif" alt="/images/emoticon/emoticon12.gif"><br>
+感謝優秀的整理能力!</p>
+
+                                    </div>
+            </div>
+        </div>
+        <div class="qa-action response-action">
+            <ul class="list-inline qa-action__list">
+                                    <li class="qa-action__item">
+                        <div class="qa-action__comment">
+                            <i class="fa fa-comment fa-fw qa-action__icon"></i>回應
+                                                        </div>
+                    </li>
+                    <li class="qa-action__item pull-right">
+                        <a href="https://ithelp.ithome.com.tw/users/login" class="qa-action__link qa-action__link-report report_btn">
+				<i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+		</a>
+                    </li>
+                            </ul>
+        </div>
+        
+        <div class="comment">
+                                                    <div class="comment__supplement"><a href="https://ithelp.ithome.com.tw/users/login">登入發表回應</a></div>
+            
+                                        
+        </div>
+        
+    </div>
+</div>
+                        
+                
+        <div id="reply">
+                            <div class="reply-status">
+                                            <h4 class="text-center">我要留言</h4>
+                                        <a href="https://ithelp.ithome.com.tw/users/login" class="btn btn-main">立即登入留言</a>
+                </div>
+                    </div>
+        
+
+    </div>
+    <div class="rightside">
+        <div class="sidebox">
+    <a href="https://ithelp.ithome.com.tw/ironman?sc=iThelpR" target="_blank" class="ir-sidebox__header ir-sidebox__header--ironman">
+        <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ironman9thsidebar.png" alt="" class="ir-sidebox__header-img">2019 iT 邦幫忙鐵人賽
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+    </a>
+    <div class="ir-sidebox__body clearfix">
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--bottom">
+            累計文章數
+            <div class="ir-sidebox__countdown-num">9283<span class="ir-sidebox__countdown-unit"> 篇</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space ir-sidebox__countdown--bottom">
+            參賽組數
+            <div class="ir-sidebox__countdown-num">523<span class="ir-sidebox__countdown-unit"> 組</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown">
+            完賽人數
+            <div class="ir-sidebox__countdown-time">
+                <div class="ir-sidebox__countdown-num">
+                    264 <span class="ir-sidebox__countdown-unit"> 人</span>
+                </div>
+            </div>
+            
+           
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space">
+            團體組數
+            <div class="ir-sidebox__countdown-num">21<span class="ir-sidebox__countdown-unit"> 組</span></div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="sidebox">
+    <div class="ir-sidebox__header">
+        鐵人賽熱門主題
+    </div>
+    <div class="sidebox__body clearfix">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20105988/ironman/1699?sc=iThelpR" target="_blank" class="sidebox__itemLink">輕量高效.NET Core開源Blog引擎:Miniblog.Core</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20105988/ironman/1622?sc=iThelpR" target="_blank" class="sidebox__itemLink">三十天.NET❤️Azure漸進式開發專案</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20107637/ironman/1927?sc=iThelpR" target="_blank" class="sidebox__itemLink">可不可以不要寫糙 code</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20091910/ironman/1874?sc=iThelpR" target="_blank" class="sidebox__itemLink">程式設計師大冒險</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20090728/ironman/1600?sc=iThelpR" target="_blank" class="sidebox__itemLink">Angular 深入淺出三十天</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20092379/ironman/2062?sc=iThelpR" target="_blank" class="sidebox__itemLink">Go劍復國-30天導入Golang</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20105694/ironman/1642?sc=iThelpR" target="_blank" class="sidebox__itemLink">[Andriod] Andriod Studio 從入門到進入狀況</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20111390/ironman/1791?sc=iThelpR" target="_blank" class="sidebox__itemLink">python 入門到分析股市</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20112540/ironman/2064?sc=iThelpR" target="_blank" class="sidebox__itemLink">英雄集結：深度學習的魔法使們</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20072651/ironman/1779?sc=iThelpR" target="_blank" class="sidebox__itemLink">DevOps學習之旅</a>
+            </li>
+                    </ul>
+        <a href="https://ithelp.ithome.com.tw/ironman?sc=iThelpR" target="_blank" class="ir-sidebox__link"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>前往鐵人賽</a>
+    </div>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門問題
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194318" class="sidebox__itemLink">
+                        只會VB.net 桌面程式想換更好的工作
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194337" class="sidebox__itemLink">
+                        網頁前端與後端網址
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194350" class="sidebox__itemLink">
+                        Windows 10 更新失敗
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194335" class="sidebox__itemLink">
+                        製作一個人臉辨識比對 App
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194354" class="sidebox__itemLink">
+                        電商商品照的建議做法？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194320" class="sidebox__itemLink">
+                        假設一個電商系統，賣給業主，如何避免複製再使用？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194332" class="sidebox__itemLink">
+                        還不是會員的購物車做法？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194360" class="sidebox__itemLink">
+                        關於Router靜態路由設定觀念
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194322" class="sidebox__itemLink">
+                        Php vs c#
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194367" class="sidebox__itemLink">
+                        free nas 
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(4).html"></script><!-- 47_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=47~ithome_forum~1275222" target="_blank"><img border="0" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/pic_1275222_726300.jpg"></a><!-- 47_ithome_forum end -->
+	<div class="a19word">
+		<script type="text/javascript" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(5).html"> </script><!-- 2_ithome_forum start -->．<a href="https://adcl.pchome.com.tw/clickAd2.html?q=2~ithome_forum~1271773" target="_blank">身為數位政府一員的您，絕對不能錯過8/28 數位政府高峰會！&nbsp;</a><br>．<a href="https://adcl.pchome.com.tw/clickAd2.html?q=2~ithome_forum~1275069" target="_blank">老舊電腦會影響公司營運與商機&nbsp;&nbsp;&nbsp;</a><br>．<a href="https://adcl.pchome.com.tw/clickAd2.html?q=2~ithome_forum~1275221" target="_blank">免費網絡研討會“如何透過應用情報提升網絡安全”?&nbsp;&nbsp;</a><br>．<a href="https://adcl.pchome.com.tw/clickAd2.html?q=2~ithome_forum~1269138" target="_blank">鎮守資安門戶！精兵實戰課程立即搶票&nbsp;</a><br><!-- 2_ithome_forum end -->
+	</div>
+</div>
+
+<div class="sidebox a240">
+	<script type="text/javascript" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(6).html"> </script>
+</div>
+
+<div class="sidebox">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/ithelpfans/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fithelpfans%2F&amp;locale=zh_TW&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 181px;"><iframe name="f3aee22a0e1d378" width="300px" height="1000px" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/page.html" style="border: none; visibility: visible; width: 300px; height: 181px;" class=""></iframe></span></div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        站方公告
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                <a href="https://ithelp.ithome.com.tw/announces/39" class="sidebox__itemLink">
+                    ☀️是的，iT邦幫忙鐵人賽來了☀️　9月2日開賽，現在開始準備剛剛好喔！
+                </a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        熱門tag
+        <a href="https://ithelp.ithome.com.tw/tags" class="sidebox__moreLink">看更多<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2019%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2019鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2018%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2018鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2017%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2017鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows" class="tag sidebox__tagList">
+                windows
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows%20server" class="tag sidebox__tagList">
+                windows server
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/javascript" class="tag sidebox__tagList">
+                javascript
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/linux" class="tag sidebox__tagList">
+                linux
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/php" class="tag sidebox__tagList">
+                php
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88" class="tag sidebox__tagList">
+                程式設計
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%88%86%E4%BA%AB" class="tag sidebox__tagList">
+                分享
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8" class="tag sidebox__tagList">
+                資訊安全
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%81%B7%E5%A0%B4" class="tag sidebox__tagList">
+                職場
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86" class="tag sidebox__tagList">
+                專案管理
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B7%A5%E4%BD%9C" class="tag sidebox__tagList">
+                工作
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E4%BC%BA%E6%9C%8D%E5%99%A8" class="tag sidebox__tagList">
+                伺服器
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88" class="tag sidebox__tagList">
+                網頁設計
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/sql" class="tag sidebox__tagList">
+                sql
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/c%23" class="tag sidebox__tagList">
+                c#
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/mysql" class="tag sidebox__tagList">
+                mysql
+            </a>
+            </div>
+</div>
+
+
+
+
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門回答
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194318" class="sidebox__itemLink">
+                        只會VB.net 桌面程式想換更好的工作
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194387" class="sidebox__itemLink">
+                        如何抓取「無論是 POST 或 GET 打過來的主機 IP」？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194322" class="sidebox__itemLink">
+                        Php vs c#
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194350" class="sidebox__itemLink">
+                        Windows 10 更新失敗
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194367" class="sidebox__itemLink">
+                        free nas 
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194392" class="sidebox__itemLink">
+                        關於實體ip的問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194320" class="sidebox__itemLink">
+                        假設一個電商系統，賣給業主，如何避免複製再使用？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194321" class="sidebox__itemLink">
+                        離開公司網域的Windows 10授權過多久會失效嗎?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194331" class="sidebox__itemLink">
+                        C語言  問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10194332" class="sidebox__itemLink">
+                        還不是會員的購物車做法？
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(7).html"></script><!-- 9_ithome_forum start --><div ad_type="9"><a href="https://adcl.pchome.com.tw/clickAd2.html?q=9~ithome_forum~1274700" target="_blank"><img border="0" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/pic_1274700_726294.jpg"></a></div><!-- 9_ithome_forum end -->
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門文章
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212310" class="sidebox__itemLink">
+                        三分鐘學會安裝 LibreNMS SNMP Tools CentOS 7 (Apache)
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212286" class="sidebox__itemLink">
+                        【Python 超入門】(9) input()函數- 使用者跟電腦對話的方法 
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212330" class="sidebox__itemLink">
+                        論線上博彩中的比特幣
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212333" class="sidebox__itemLink">
+                        CORS / XMLHttpRequest 解決方法
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212344" class="sidebox__itemLink">
+                        How to Scrape Websites Without Being Blocked?(如何避免爬蟲被封？)
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212318" class="sidebox__itemLink">
+                        Udemy【限時免費】的 Facebook 網上行銷與技巧課程
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212306" class="sidebox__itemLink">
+                        一卡看通 - 敏捷和Scrum框架
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212293" class="sidebox__itemLink">
+                        連接金融市場電子公文系統
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212317" class="sidebox__itemLink">
+                        資料結構(二)用鏈結串列儲存陣列資料
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10212324" class="sidebox__itemLink">
+                        Scrum會議太多了! 真的嗎？
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        一週點數排行
+        <a href="https://ithelp.ithome.com.tw/point_rank/total" class="sidebox__moreLink">更多點數排行<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+        <ol class="list-unstyled sidebox__rank">
+
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117259/profile" class="sidebox__rankItemLink">dragonH (jack61811)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20101641/profile" class="sidebox__rankItemLink">浩瀚星空 (yoching)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20105694/profile" class="sidebox__rankItemLink">小魚 (henrychang)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20026603/profile" class="sidebox__rankItemLink">raytracy (raytracy)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117954/profile" class="sidebox__rankItemLink">japhenchen (japhenchen)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20102786/profile" class="sidebox__rankItemLink">小松菜奈 (asys0512)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20110611/profile" class="sidebox__rankItemLink">echochio (echochio)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20001416/profile" class="sidebox__rankItemLink">門神JanusLin (januslin)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20109820/profile" class="sidebox__rankItemLink">jason311101 (jason311101)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20104001/profile" class="sidebox__rankItemLink">froce (froce)</a>
+                </li>
+                    </ol>
+    </div>
+</div>    </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="a970">
+                    <script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/getAd2JS(8).html"></script><!-- 41_ithome_forum start --><a href="https://adcl.pchome.com.tw/clickAd2.html?q=41~ithome_forum~1271771" target="_blank"><img border="0" src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/pic_1271771_726252.gif"></a><!-- 41_ithome_forum end -->
+                </div>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">iThome 服務&nbsp;&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></li>
+                    <li><a href="https://www.ithome.com.tw/" target="_blank" class="footer__link">iThome online</a></li>
+                    <li><a href="https://learning.ithome.com.tw/" target="_blank" class="footer__link">iThome Learning</a></li>
+                </ul>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">電週文化事業版權所有、轉載必究 | Copyright © iThome</li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">刊登廣告</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">授權服務</a></li>
+                    <li><a href="mailto:ithelp@mail.ithome.com.tw" class="footer__link">服務信箱</a></li>
+                    <li><a href="https://www.ithome.com.tw/terms" target="_blank" class="footer__link">隱私權聲明與會員使用條款</a></li>
+                    <li><a href="https://ithelp.ithome.com.tw/guide" class="footer__link">iT邦幫忙使用說明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery.min.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.min.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/messenger.min.js.下載"></script>
+<script>
+    Messenger.options = {
+        extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left',
+        theme: 'block'
+    };
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    
+    window.Notification.TOKEN = getCookie("_token");
+</script>
+<script>
+    $(function(){
+        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
+            if (options.type.toLowerCase() !== "get" && !options.beforeSend) {
+                options.beforeSend = function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', 'gTNGrAaEbeqRvrCpYo7Aggot8SQ6pzKOzXwKlnh2');
+                    }
+            }
+        });
+    });
+</script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/vue.min.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.min.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/event.js.下載"></script>
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.full.min.js.下載"></script>
+
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ImgPreview.js.下載"></script>
+<!-- highlight -->
+<script src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/highlight.pack.js.下載"></script>
+<script>
+    $(function(){
+        $('pre code').each(function(i, block) {
+            $(block).attr('class');
+            hljs.highlightBlock(block);
+        });
+    })
+</script>
+<!--messenger, get cookie, token-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3355931-1']);
+  _gaq.push(['_trackPageview']);
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+
+
+
+    <div class="modal fade" id="AtUser" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title text-center">At</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="invite_person" class="control-label">輸入對方的帳號或暱稱</label>
+                        <input type="text" class="form-control modal-input" id="invite_person" v-model="result_text" debounce="500">
+                        <div id="editor_tagged_ids"></div>
+                    </div>
+                    <ul class="list-unstyled invitation">
+                        <li style="text-align: center">
+                            <template v-if="!!result_text &amp;&amp; !result_list.length &amp;&amp; is_loading"></template>
+                            <template v-if="!!result_text &amp;&amp; !result_list.length &amp;&amp; !is_loading"></template>
+                        </li>
+                        <li class="invitation-list" v-for="result in result_list">
+                            <img src="./[Day30]心得分享 - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/{{ result.center_id }}" style="float: left; margin-left: 10px; width: 48px; height: 48px;">
+                            <div class="invitation-list__content clearfix">
+                                <a class="btn btn-main invitation-list__btn" @click="AtUserByID(result.label, result.id)">標記</a>
+                                <div><a href="https://ithelp.ithome.com.tw/articles/10201985#" class="invitation-list__name">{{ result.label }}</a></div>
+                                <div><a href="https://ithelp.ithome.com.tw/articles/10201985#" class="invitation-list__account">{{ result.account }}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-main" data-dismiss="modal">關閉</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body></html>
